@@ -1,0 +1,55 @@
+Which number is bigger?
+- Declare 2 variables, both numbers
+- Compare which number is greater
+- Log the output, e.g. "The greater number of 5 and 10 is 10."
+- Add an output for the else statement, e.g. "The smaller number of 5 and 10 is 5."
+
+Pseudo Code
+1. take 2 numbers from the user
+2. check if they are numbers or not
+3. if not ask for correction
+4. compare the numbers
+5. write an output message
+
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+
+The world translator
+Write a function named helloWorld that:
+
+- Takes 1 argument, a language code (e.g. "es", "de", "en")
+- Returns "Hello, World" for the given language, for at least 3 languages. It should default to returning English.
+- Call that function for each of the supported languages and log the result to make sure it works
+
+Pseudo Code
+1. show language options
+2. take as a variable the choice of user
+3. write an output message in language user chosen
+
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+
+Retirement calculator
+- Create a program that determines how many years you have left until retirement and the year you can retire. 
+    It should prompt for your current age and the age you want to retire 
+    and display the output as shown in the example that follows on the next slide.
+
+Example:
+
+What is your age? 25
+At what age would you like to retire? 65
+You have 40 years left until you can retire.
+It's 2020, so you can retire in 2060.
+
+Pseudo Code
+1. inputs:
+    - age
+    - retirement age
+2. calculation
+    - subtract the age from the retirement age
+3. output
+    - Write a message like this "It's 2020, so you can retire in 2060."
