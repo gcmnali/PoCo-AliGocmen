@@ -1,0 +1,23 @@
+Create a simple tip calculator. 
+The program should prompt for a bill amount and a tip rate. 
+The program must compute the tip and then display both the tip and the total amount of the bill
+
+inputs:
+1- bill amount
+2- tip rate
+
+outputs:
+1- bill amount
+2- tip rate
+3- tip amount
+4- total amount
+
+constraints
+1- bill amount has to be a decimal number, it can have 2 fraction
+2- tip rate has to be between 0-100
+
+some detailed points:
+1- round the result as people can pay with their currency
+    for example: the smallest coin in Switzerland is 5Rappen=0.05 CHF
+    the result should be rounded the nearest number which ends 5 or 0
+

@@ -1,0 +1,89 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.personCard{
+    border: 2px solid grey;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 5px 5px 5px grey;
+}
+.personCard .openFormLayer{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /*z-index: 1; */
+}
+.personCard .personForm{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color:#222831;
+    opacity: 0.9;
+    z-index: 2;
+    text-align: center;
+}/*
+.personCard .personForm button{
+    z-index: 10;
+}
+.personCard .personForm input{
+    z-index: 10;
+}*/
+.personCard .closeFormLayer{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    /*z-index: 2;*/
+}
+.outputSpan{
+    margin-top: 30px;
+    min-height: 60px;
+    font-weight: bold;
+    font-size: 2em;
+}
+.outputSpan .highlighted{
+    color: crimson;
+}
+.avatar{
+    max-width: 300px;
+    border-radius: 5px 5px 0px 0px;
+}
+#personal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+header {
+    width: 100%;
+    height: 150px;
+    font-weight: bold;
+    background: gold;
+    transition: .3s;
+}
+header div span{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 3px 4px rgba(black, .1);
+    transition: .3s;
+  }

@@ -1,0 +1,100 @@
+1. Say hello
+Create a program that prompts for your name and prints a greeting using your name.
+
+inputs:
+1- ask for a string to use it as a welcome message
+2- put a submit button
+
+output:
+1- show a greeting message 
+
+2. Counting the number of characters
+Create a program that prompts for an input string and displays output 
+that shows the input string and the number of characters the string contains.
+
+inputs:
+1- ask for a string
+
+outputs:
+1- string we got
+2- length of the string
+
+constraints:
+1- the input must be string
+
+3. Printing quotes
+Create a program that prompts for a quote and an author. Display the quotation and author as shown here:
+[Author] says, "[Quote]" (Replace [Author] and [Quote] with the actual values.
+
+inputs:
+1- author name
+2- quote
+
+outputs:
+message
+
+use variables in output message
+4. Mad Lib
+Definition: Mad Libs are a simple game where you create a story template with blanks for words. You or another player then construct a list of words and place them into the story, creating an often silly or funny story as result.
+4. Mad Lib
+Program statement: Create a simple mad-lib program that prompts for a noun, a verb, an adverb, and an adjective and injects those into a story that you create.
+
+inputs
+1- guess
+
+output
+1- you found it message
+
+use a stroy and hide some words and ask to user to find those hidden words, when user find a word pass to the second word.
+define a list which holds all hidden words. assign order numbers as key and words as value. 
+check in this order
+
+5. Random password generator
+Create a random password generator. The password has to have a length of at least 8 characters, at least 1 digit and 1 special char (_ or -).
+
+inputs:
+1- generate button
+2- slider to decide the length of psw
+
+output
+1- random password
+
+digits: all digits list
+letters: all letters list
+chars: all characters list
+allPossibilities: create a list which includes all letters, all digits and all chars
+
+1- generate a number, use this number as the length of password 
+    1a- we can take this number from the user with help of slider
+2- run a loop from 0-(length of psw) 
+    in every iteration chose one element from our allPossibilities list.
+3- end of the loop we can check constraints, 
+    - if the res has not 1 digit we can change randomly one element with a digit. in this case we should use digits array.
+4- like this way we should check other constraints.
+
+6. Phone number validation
+Validate a telephone number, as if written on an input form. 
+Telephone numbers can be written as ten digits, or with dashes, spaces, 
+or dots between the three segments, or with the area code parenthesized; 
+both the area code and any white space between segments are optional.
+
+"-", " ", ".", "(", ")"
+10 digits
+
+inputs:
+string telNo: the telefon number user typed
+submit button
+
+outputs:
+validated number
+and a message shows it is valid or not
+    "Valid" or "Invalid"
+
+1- make a list(telNoChars) with the characters of telNo
+2- run a loop for all chars of telNoChars
+3- our structure will be like this 0775556666
+4- if the first element of telNoChars put a 0 at the first place
+5- then put the other digits in the order like structure
+6- put spaces at 3.and 6.positions
+7- if the length of result is 10 it is valid
+show the result
