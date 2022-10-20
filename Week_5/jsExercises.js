@@ -6,7 +6,7 @@ function btn1Onclick(){
     var num1 = parseInt(document.getElementById("num1").value);
     var num2 = parseInt(document.getElementById("num2").value);
 
-    if(isNaN(num1) || num1.length || isNaN(num1)){
+    if(isNaN(num1) || isNaN(num2)){
         alert("Write good numbers");
         return;
     }
@@ -29,12 +29,12 @@ function btn2Onclick(){
     }
 
     var msg = document.getElementById("output2");
-    var year = 2020 + num4 - num3;
+    var year = 2022 + num4 - num3;
 
     if(num4<num3)
         alert("Why are you scratching, you already retired, would you like to work more?");
     else
-        msg.innerHTML = `It's 2020, so you can retire in ${year}`;
+        msg.innerHTML = `It's 2022, so you can retire in ${year}`;
 }
 function btn3Onclick(){
     var s = document.getElementById("lang");

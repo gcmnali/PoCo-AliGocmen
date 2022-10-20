@@ -145,23 +145,114 @@ function btn8Onclick(){
   output7.innerHTML = HighlightIt(input10 * 9);
 }
 
+function arrayExercises1(){
+  var myArr = new Array();
 
-var myArr = new Array();
+  myArr.push("Banana");
+  myArr.push("Apple");
+  myArr.push("Orange");
+  myArr.push("Blueberries");
+  myArr.push("Apricot");
+  
+  console.log(myArr.join(":"));
+  var newArr = myArr.concat(["Kiwi","Peach"]);
+  
+  console.log(newArr);
+  console.log(document.getElementsByTagName("section"));
+  
+  var span1 = document.getElementById("output8");
+  var span2 = document.getElementById("output9");
+  var span3 = document.getElementById("output10");
+  var span4 = document.getElementById("output11");
+  var span5 = document.getElementById("output12");
+  var span6 = document.getElementById("output13");
+  
+  var str = "This is my array : <br>";
+  myArr.forEach(element => {
+    str += element + " .../|\\... "
+  });
+  span1.innerHTML = str;
+  
+  myArr.splice(0,1);
+  str = "<br> I deleted an element <br>";
+  myArr.forEach(element => {
+    str += element + " .../|\\... "
+  });
+  span2.innerHTML = str;
+  span2.innerHTML = str;
+  span2.innerHTML = str;
 
-myArr.push("Ali");
-myArr.push("Fatma Nur");
-myArr.push("Hülya");
-myArr.push("Mehmet");
-myArr.push("Burak");
+  myArr.sort();
+  str = "<br> This is sorted list <br>";
+  myArr.forEach(element => {
+    str += element + " .../|\\... "
+  });
+  span3.innerHTML = str;
+  
+  str = "<br> I added something <br>";
+  newArr.forEach(element => {
+    str += element + " .../|\\... "
+  });
+  span4.innerHTML = str;
+  
+  newArr.splice(1,1);
+  str = "<br> I removed the apple <br>";
+  newArr.forEach(element => {
+    str += element + " .../|\\... "
+  });
+  span5.innerHTML = str;
+  
+  newArr.reverse();
+  str = "<br> I reversed the arr <br>";
+  newArr.forEach(element => {
+    str += element + " .../|\\... "
+  });
+  span6.innerHTML = str;
+}
 
-console.log(myArr.join(":"));
-var newArr = myArr.concat(["Emre","Elif"]);
+let strEx10 = "<br>";
+let selectionCount = 0;
+let span7 = document.getElementById("output14");
+let sel = document.getElementById("colors");
 
-myArr.every
+function colorPicker(){
+  var opt = sel.options[parseInt(sel.value)].innerHTML;
+  selectionCount++;
 
-console.log(newArr);
+  if(selectionCount%10 == 2){
+    strEx10 += selectionCount+"nd"+" choise is "+opt;
+  }
+  else if(selectionCount%10 == 3){
+    strEx10 += selectionCount+"rd"+" choise is "+opt;
+  }
+  else if(selectionCount%10 == 1)
+    strEx10 += selectionCount+"st"+" choise is "+opt;
+  else
+    strEx10 += selectionCount+"th"+" choise is "+opt;
 
-var arr = [{name:"Ali"}, "dsfd"];
-console.log(arr);
+    strEx10 += "<br>";
+    
+  span7.innerHTML = strEx10;
+  //span7.insertAdjacentHTML("beforeend",)
+}
+function clearHistoryEx10(){
+  strEx10 = "<br>";
+  span7.innerHTML = "";
+  selectionCount = 0;
+}
 
-console.log(document.getElementsByTagName("section"));
+let sp = document.getElementById("output15");
+let foods = [
+  { title: "Soup", servings : "2", ingredients : ["Salt","Water","Tomato"]},
+  { title: "Kebap", servings : "3", ingredients : ["Meat","Onion"]},
+  { title: "Drink", servings : "4", ingredients : ["Orange"]}
+]
+
+var str = "";
+for (let i = 0; i < foods.length; i++) {
+  console.log(foods[i]);
+  
+  str += "Title : "+ foods[i].title+"<br>" +"Servings : "+foods[i].servings+"<br>"+"Ingredients : "+foods[i].ingredients.toString();
+  str+= "<br><br>"
+}
+sp.innerHTML= str;
