@@ -37,11 +37,38 @@ Inputs:
     const toDo = document.getQuerySelector('input[type=text]');
 
 Process:
+To-Do list
 - Create Html, css, js files
 - Create Form Section
-Create ann array to store all task objects
 - Create Clear and Save buttons
-- 
+
+- Create ann array to store all task objects
+- Create an object/class to store an independent task
+    with properties which we mentioned above
+- functions 
+    - validation functions
+        - input validations
+        - to be done date can not be earlier than start date
+    - showList()
+        - this function will be invoked when the page is loaded
+        - show only undone tasks
+        - create html tags to be able to show the list
+    - sortList() (use two different button)
+        - by alphabetically()
+        - by date()
+    - DeleteTask()
+        - prompt user if he/she is sure
+    - updateTask()
+        - add onclick event to the edit button
+        - fill the form with the data of chosen task
+    - CreateNewTask()
+    - filtering
+        - doneUndone()
+        - filterByDate()
+    - hideForm()
+    - showForm()
+
+
 
 Outputs:
 - Tasks list
